@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen IT Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">NextGen<span>IT</span></div>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <p class="tag">Trusted Technology Partner</p>
+      <h1>Build, Secure, and Scale Your Digital Business</h1>
+      <p>
+        We provide cloud engineering, cybersecurity, and managed IT support to help modern companies move faster.
+      </p>
+      <a class="btn" href="#contact">Get a Free Consultation</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="services" class="section">
+      <h2>Our IT Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Cloud Infrastructure</h3>
+          <p>Design and migration support for AWS, Azure, and hybrid environments.</p>
+        </article>
+        <article class="card">
+          <h3>Cybersecurity</h3>
+          <p>Threat monitoring, incident response, and policy hardening for compliance.</p>
+        </article>
+        <article class="card">
+          <h3>Managed Support</h3>
+          <p>24/7 monitoring and helpdesk assistance to keep your systems online.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <h2>Why Teams Choose NextGenIT</h2>
+      <ul class="features">
+        <li>Certified engineers with hands-on enterprise experience</li>
+        <li>Fast response SLAs and transparent reporting</li>
+        <li>Security-first implementation across every project</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Book a Discovery Call</h2>
+      <form id="contactForm" class="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Work Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Company
+          <input type="text" name="company" required />
+        </label>
+        <button type="submit">Submit</button>
+        <p id="formMessage" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> NextGenIT. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
