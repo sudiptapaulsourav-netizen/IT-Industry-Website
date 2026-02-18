@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudySync | Collaborate, Learn, and Grow Together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PKZ5QiAj6Ta86w+fsb2TkR4j8kWUE00s/2w9kYx9Y+7P4X2vY7N0fQ8xA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo">StudySync</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="mainNav">
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="profile.html">About</a>
+          <a href="#" class="ghost-btn">Sign Up</a>
+          <a href="session.html" class="solid-btn">Login</a>
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button class="icon-btn" aria-label="Notifications">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content reveal">
+          <p class="eyebrow">Real-Time Group Study Platform</p>
+          <h1>Collaborate, Learn, and Grow Together</h1>
+          <p>
+            Join real-time study sessions, collaborate on notes, and track tasks with ease.
+            Study smarter with everything in one distraction-free workspace.
+          </p>
+          <div class="hero-actions">
+            <a href="session.html" class="solid-btn large">Join a Session</a>
+            <a href="session.html#create" class="ghost-btn large">Create a Session</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="features">
+        <div class="section-heading reveal">
+          <h2>Powerful features for focused teamwork</h2>
+          <p>Everything your study group needs to communicate, organize, and finish faster.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <i class="fa-regular fa-comments"></i>
+            <h3>Real-Time Chat</h3>
+            <p>
+              Send instant messages with contextual discussion threads. Keep every participant
+              aligned with live updates and quick reactions.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <h3>Collaborative Notes</h3>
+            <p>
+              Co-edit rich study notes with real-time syncing. Organize formulas, highlights,
+              and references while everyone contributes together.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <i class="fa-solid fa-list-check"></i>
+            <h3>Task Management</h3>
+            <p>
+              Split work into clear tasks and track progress by status. Stay accountable with
+              to-do, in-progress, and completed checkpoints.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt" id="pricing">
+        <div class="container cards-row reveal">
+          <div class="mini-card">
+            <h3>Free Plan</h3>
+            <p>Perfect for small groups starting out.</p>
+            <strong>$0 / month</strong>
+          </div>
+          <div class="mini-card featured">
+            <h3>Pro Study Teams</h3>
+            <p>Advanced collaboration and analytics.</p>
+            <strong>$12 / month</strong>
+          </div>
+          <div class="mini-card">
+            <h3>Campus Edition</h3>
+            <p>For institutions and large communities.</p>
+            <strong>Custom pricing</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 StudySync. Built for collaborative learning.</p>
+    </footer>
+
+    <nav class="mobile-bottom-nav">
+      <a href="session.html#chat"><i class="fa-regular fa-comments"></i><span>Chat</span></a>
+      <a href="session.html#notes"><i class="fa-solid fa-note-sticky"></i><span>Notes</span></a>
+      <a href="session.html#tasks"><i class="fa-solid fa-list-check"></i><span>Tasks</span></a>
+      <a href="profile.html"><i class="fa-regular fa-user"></i><span>Profile</span></a>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>

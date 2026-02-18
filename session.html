@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudySync | Session Workspace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PKZ5QiAj6Ta86w+fsb2TkR4j8kWUE00s/2w9kYx9Y+7P4X2vY7N0fQ8xA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="workspace-body">
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo">StudySync</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="mainNav">
+          <a href="index.html">Home</a>
+          <a href="#chat">Chat</a>
+          <a href="#notes">Notes</a>
+          <a href="#tasks">Tasks</a>
+          <a href="profile.html">Profile</a>
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="workspace container">
+      <aside class="sidebar reveal">
+        <div class="profile-summary">
+          <img src="https://i.pravatar.cc/120?img=31" alt="User profile" />
+          <div>
+            <h2>Priya Sharma</h2>
+            <p>@priya.studies</p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Active Sessions</h3>
+          <ul class="session-list">
+            <li><span>Data Structures Sprint</span> <button>Join</button></li>
+            <li><span>Discrete Math Group</span> <button>Leave</button></li>
+            <li><span>Operating Systems Prep</span> <button>Join</button></li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>Quick Navigation</h3>
+          <a href="#chat">Chat Room</a>
+          <a href="#notes">Live Notes</a>
+          <a href="#tasks">Task Board</a>
+          <a href="#video">Video Call</a>
+        </div>
+      </aside>
+
+      <section class="workspace-content">
+        <div class="video-panel reveal" id="video">
+          <div>
+            <h3>Live Study Call</h3>
+            <p>2 participants in room • Low latency mode</p>
+          </div>
+          <button class="solid-btn">Start Call</button>
+          <div class="video-thumbs">
+            <span>Priya</span><span>Alex</span><span>Open Slot</span>
+          </div>
+        </div>
+
+        <div class="workspace-grid">
+          <article class="card reveal" id="chat">
+            <h3>Real-Time Chat</h3>
+            <div class="chat-box" id="chatMessages">
+              <div class="bubble bubble-alt">Alex: Let's review graph algorithms first.</div>
+              <div class="bubble">Priya: Great, I'll summarize BFS and DFS in notes.</div>
+              <div class="bubble bubble-alt">Rina: I'll create a task list for revision topics.</div>
+            </div>
+            <form class="chat-input" id="chatForm">
+              <input type="text" id="chatInput" placeholder="Type your message..." required />
+              <button type="button" class="icon-btn" aria-label="Emoji"><i class="fa-regular fa-face-smile"></i></button>
+              <button type="button" class="icon-btn" aria-label="Upload file"><i class="fa-solid fa-paperclip"></i></button>
+              <button type="submit" class="solid-btn">Send</button>
+            </form>
+          </article>
+
+          <article class="card reveal" id="notes">
+            <h3>Collaborative Notes</h3>
+            <div class="toolbar">
+              <button>B</button><button>I</button><button>H1</button><button>• List</button>
+            </div>
+            <div contenteditable="true" class="notes-editor">
+              <h4>Session Notes</h4>
+              <p><strong>Topic:</strong> Graph Traversal</p>
+              <p>- BFS uses queue and finds shortest path in unweighted graphs.</p>
+              <p>- DFS uses stack/recursion and is useful for connectivity checks.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" id="tasks">
+            <h3>Task Management</h3>
+            <div class="tasks-board">
+              <div>
+                <h4>To Do</h4>
+                <label><input type="checkbox" /> Solve 5 BFS problems</label>
+                <label><input type="checkbox" /> Draft cheat-sheet</label>
+              </div>
+              <div>
+                <h4>In Progress</h4>
+                <label><input type="checkbox" /> Summarize DFS complexity</label>
+                <label><input type="checkbox" checked /> Prepare quiz questions</label>
+              </div>
+              <div>
+                <h4>Completed</h4>
+                <label><input type="checkbox" checked /> Create session agenda</label>
+                <label><input type="checkbox" checked /> Assign speaker order</label>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <nav class="mobile-bottom-nav">
+      <a href="#chat"><i class="fa-regular fa-comments"></i><span>Chat</span></a>
+      <a href="#notes"><i class="fa-solid fa-note-sticky"></i><span>Notes</span></a>
+      <a href="#tasks"><i class="fa-solid fa-list-check"></i><span>Tasks</span></a>
+      <a href="#video"><i class="fa-solid fa-video"></i><span>Call</span></a>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>
